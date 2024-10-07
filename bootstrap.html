@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROUND THE WORLD AGENCY</title>
+    <link rel="icon" href="./age.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand logonavbar" href="#"><img src="./age.png" alt="logo" width="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light active" aria-current="page" href="#carouselExample">HOME</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#about-us">ABOUT US</a> 
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  DESTINATION
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EUROPE</a></li>
+                  <li><a class="dropdown-item" href="#">AMERIQUE</a></li>
+                  <li><a class="dropdown-item" href="#">ASIE</a></li>
+                  <li><a class="dropdown-item" href="#">AFRIQUE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#contact-us">CONTACT</a> 
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"> 
+        <!--Carousel indicators-->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExample" 
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <!-- First item -->
+          <div class="carousel-item active">
+            <img
+              src="./afrique.jpg"
+              class="d-block w-100"
+              style="height: 500px; object-fit: cover;"
+              alt="Explorez l'Afrique : Aventure et Beauté Sauvage" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Explorez l'Afrique : Aventure et Beauté Sauvage</h5>
+              <p>Afrique : découverte et aventure inoubliables.</p>
+            </div>
+          </div>
+          <!-- Second item -->
+          <div class="carousel-item">
+            <img
+              src="./asia.jpg"
+              class="d-block w-100"
+              style="height: 500px; object-fit: cover;"
+              alt="Asie : immersion dans des cultures fascinantes" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Asie : immersion dans des cultures fascinantes</h5>
+              <p>Voyage en Asie : Traditions et Merveilles Modernes.</p>
+            </div>
+          </div>
+          <!-- Third item -->
+          <div class="carousel-item">
+            <img
+              src="./euro.jpg"
+              class="d-block w-100"
+              style="height: 500px; object-fit: cover;"
+              alt="Europe : histoire et modernité à explorer" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Europe : histoire et modernité à explorer</h5>
+              <p>Découvrez l'Europe : Un Mélange Unique de Culture et Histoire.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Carousel controls - prev item-->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample" 
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+        </button>
+        <!--Carousel controls - next item-->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample" 
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+        </button>
+      </div>
+     
+      <!--cards-->
+      <div id="services" class="row row-cols-1 row-cols-md-3 g-4 w-100 cards"> 
+        <div class="col">
+          <div class="card bg-black ">
+            <img src="./japan.jpg" class="card-img-top" alt="IMG JAPAN">
+            <div class="card-body bg-black"> 
+              <h5 class="card-title text-light">VISIT JAPAN</h5>
+              <p class="card-text text-light">Visitez le Japon : découvrez des temples ancestraux, des villes ultramodernes et des paysages à couper le souffle.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-black ">
+            <img src="./TUNISIA.jpg" class="card-img-top" alt="IMG TUNISIA">
+            <div class="card-body bg-black">
+              <h5 class="card-title text-light">VISIT TUNISIA</h5>
+              <p class="card-text text-light">Découvrez la Tunisie : un pays aux paysages variés, alliant déserts fascinants et plages méditerranéennes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-black ">
+            <img src="./MALTA.jpg" class="card-img-top" alt="IMG MALTA">
+            <div class="card-body bg-black">
+              <h5 class="card-title text-light">VISIT MALTA</h5>
+              <p class="card-text text-light">Visitez Malte : un archipel enchanteur où se mêlent plages dorées, histoire millénaire et villages pittoresques à explorer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-black ">
+            <img src="./BRAZIL.jpg" class="card-img-top" alt="IMG BRAZIL">
+            <div class="card-body bg-black">
+              <h5 class="card-title text-light">VISIT BRAZIL</h5>
+              <p class="card-text text-light">Explorez le Brésil : un véritable paradis tropical, avec ses forêts luxuriantes, ses plages légendaires et sa culture vibrante et accueillante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   
+    
+  <!-- About Us Section -->
+<section id="about-us" class="about-us py-5"> 
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <img src="./agency.jpg" class="img-fluid" alt="Travel Agency">
+          </div>
+          <div class="col-md-6">
+              <h2>About Us</h2>
+              <p>Welcome to AROUND THE WORLD AGENCY, your number one source for all things travel. We're dedicated to providing you the best travel experiences, with a focus on dependability, customer service, and uniqueness.</p>
+              <p>Founded in 2024 by SKANDER CHAHERLI, AROUND THE WORLD AGENCY has come a long way from its beginnings. When SKANDER CHAHERLI first started out, their passion for travel drove them to start their own business.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="contact-us py-5 bg-light"> 
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h3>Contact Us</h3>
+              <p>Email: contact@AROUNDTHEWORLDAGENCY.com</p>
+              <p>Phone: 52441197</p>
+              <p>Address: 12 rue foll, manzeh5 , Ariana</p>
+          </div>
+          <div class="col-md-6">
+              <h3>Get in Touch</h3>
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Send Message</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+  </main>
+<br>
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>THE BEST TRAVEL AGENCY IN TUNISIA</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#carouselExample" class="text-white">Home</a></li> 
+                        <li><a href="#about-us" class="text-white">About</a></li> 
+                        <li><a href="#services" class="text-white">Services</a></li> 
+                        <li><a href="#contact-us" class="text-white">Contact</a></li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-5">Follow Us</h5>
+                    
+                    
+
+                <div class="d-flex flex-row align-items-center">
+                        <a href="https://www.facebook.com" class="text-white me-3">
+                            <i class="fab fa-facebook fa-2x"></i> Facebook
+                        </a>
+                        <a href="https://www.twitter.com" class="text-white me-3">
+                            <i class="fab fa-twitter fa-2x"></i> Twitter
+                        </a>
+                        <a href="https://www.instagram.com" class="text-white me-3">
+                            <i class="fab fa-instagram fa-2x"></i> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com" class="text-white">
+                            <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 AROUND THE WORLD AGENCY. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
